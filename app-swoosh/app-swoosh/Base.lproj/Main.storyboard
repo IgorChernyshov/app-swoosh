@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZTc-VC-g7c"/>
                         <viewControllerLayoutGuide type="bottom" id="dNw-Fb-BcA"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="32.833583208395808"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="7mG-Mm-kJb">
             <objects>
-                <viewController id="HnU-9W-q9f" sceneMemberID="viewController">
+                <viewController id="HnU-9W-q9f" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Abe-31-40A"/>
                         <viewControllerLayoutGuide type="bottom" id="Qfs-vM-LZq"/>
@@ -218,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="774" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="cyX-co-YkQ">
             <objects>
-                <viewController id="jpW-UJ-nRz" sceneMemberID="viewController">
+                <viewController id="jpW-UJ-nRz" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tAi-fN-TtY"/>
                         <viewControllerLayoutGuide type="bottom" id="tR4-SD-Ram"/>
