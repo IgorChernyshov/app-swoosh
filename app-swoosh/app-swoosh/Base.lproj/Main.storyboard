@@ -48,6 +48,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HnU-9W-q9f" kind="show" id="1QF-5d-AHV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whq-JK-pu5">
                                 <rect key="frame" x="57.5" y="139" width="260" height="66"/>
@@ -178,12 +181,24 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idl-ud-fq5">
+                                <rect key="frame" x="16" y="20" width="44" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="pug-Uk-fVF"/>
+                                    <constraint firstAttribute="height" constant="33" id="y7m-4H-b8a"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="3Zp-nw-iyK" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="t6e-SI-6np"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k1T-q6-yut" firstAttribute="top" secondItem="phX-QT-vOJ" secondAttribute="bottom" constant="50" id="8X3-oQ-w8e"/>
                             <constraint firstAttribute="trailing" secondItem="phX-QT-vOJ" secondAttribute="trailing" id="8cw-BC-hrQ"/>
                             <constraint firstItem="Qfs-vM-LZq" firstAttribute="top" secondItem="B8y-bR-1iS" secondAttribute="bottom" constant="20" id="AoK-AZ-rXl"/>
+                            <constraint firstItem="idl-ud-fq5" firstAttribute="top" secondItem="jna-Ti-zSc" secondAttribute="topMargin" id="Exy-MN-TXN"/>
                             <constraint firstItem="phX-QT-vOJ" firstAttribute="top" secondItem="jna-Ti-zSc" secondAttribute="top" constant="25" id="Fwa-bk-3ci"/>
                             <constraint firstAttribute="trailing" secondItem="bDQ-pa-PKb" secondAttribute="trailing" id="Hq9-KT-bxa"/>
                             <constraint firstItem="bDQ-pa-PKb" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leading" id="KLe-Lr-vkz"/>
@@ -194,10 +209,12 @@
                             <constraint firstItem="phX-QT-vOJ" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leading" id="dTH-Q3-Civ"/>
                             <constraint firstItem="B8y-bR-1iS" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leadingMargin" id="qQz-xs-5VK"/>
                             <constraint firstItem="k1T-q6-yut" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leading" constant="16" id="r82-EE-Q2j"/>
+                            <constraint firstItem="idl-ud-fq5" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leadingMargin" id="tJT-VK-YCF"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUv-4X-eNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3Zp-nw-iyK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="774" y="33"/>
         </scene>
@@ -298,6 +315,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
