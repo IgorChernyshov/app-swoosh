@@ -90,10 +90,6 @@
                             <constraint firstItem="dNw-Fb-BcA" firstAttribute="top" secondItem="aaL-zb-EvR" secondAttribute="bottom" id="yhk-Zj-VEj"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="aaL-zb-EvR" id="lvA-DT-3LE"/>
-                        <outlet property="swoosh" destination="jjR-Jr-yjM" id="tw3-0l-l6a"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,6 +158,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="HnU-9W-q9f" eventType="touchUpInside" id="dwq-Ch-QFa"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="phX-QT-vOJ">
                                 <rect key="frame" x="0.0" y="25" width="375" height="65"/>
@@ -212,6 +211,9 @@
                             <constraint firstItem="idl-ud-fq5" firstAttribute="leading" secondItem="jna-Ti-zSc" secondAttribute="leadingMargin" id="tJT-VK-YCF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="jpW-UJ-nRz" kind="show" identifier="skillVCSegue" id="UPX-7i-vRJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUv-4X-eNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3Zp-nw-iyK" userLabel="Exit" sceneMemberID="exit"/>
